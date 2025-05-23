@@ -40,9 +40,17 @@
           const section = document.createElement("section");
           section.innerHTML = `
             <div class="keyword">${item.keyword}</div>
-            <p>${item.description}</p>
-            <div class="problem">📌 ${item.problem}</div>
-            <div class="solution">✅ ${item.solution}</div>
+            <p><strong>คืออะไร:</strong> ${item.description}</p>
+          
+            <div class="problem">
+              <strong>ถ้าเจอปัญหาแบบนี้:</strong><br>
+              ${item.problem}
+            </div>
+          
+            <div class="solution">
+              <strong>ควรแก้ไข:</strong><br>
+              ${item.solution}
+            </div>
           `;
           container.appendChild(section);
         });
